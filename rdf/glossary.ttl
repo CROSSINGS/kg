@@ -1,0 +1,28 @@
+@prefix crs: <http://crossings.github.io/term/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+# Instances of kinaesthetic framework
+
+<http://data.unil.ch/type/crossings/bodypart-hand> a crs:BodyPartType
+	; rdfs:label "Hand"@en
+	; dc:description "Any one hand: can be used when the technique applies to left or right indistinctly."@en
+.
+
+<http://data.unil.ch/type/crossings/flowtrans-external> a crs:FlowTransmissionType
+	; rdfs:label "External flow transmission"@en
+	; dc:description "The power of a blow comes from a part of the body connects at the point of impact."@en
+.
+
+<http://data.unil.ch/type/crossings/flowtrans-internal> a crs:FlowTransmissionType
+	; rdfs:label "Internal flow transmission"@en
+	; dc:description "The power of a blow comes from a part of the body that does not match the point of impact."@en
+.
+
+# Instances of stylistic framework
+
+<http://data.unil.ch/tecnhique/crossings/nian_shou> a crs:Technique
+	; rdfs:label "Sticky Hands"@en , "粘手"@zh , "Nian shou"@zh
+	; crs:hasFlowTransmission <http://data.unil.ch/type/crossings/flowtrans-internal>
+	; crs:contactsThrough <http://data.unil.ch/type/crossings/bodypart-hand>
+.
