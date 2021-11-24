@@ -1,0 +1,35 @@
+{
+  "contains": [{
+    "total": 1,
+    "generated": "ELAN Multimedia Annotator 6.2",
+    "id": "urn:nl-mpi-tools-elan-eaf:3e5d688a-b109-4fb2-ae80-cbcd740561c6#collection1",
+    "label": ":move",
+    "type": "AnnotationCollection",
+    "@context": "http://www.w3.org/ns/ldp.jsonld",
+    "first": {
+      "startIndex": "0",
+      "id": "urn:nl-mpi-tools-elan-eaf:3e5d688a-b109-4fb2-ae80-cbcd740561c6#collection1-page1",
+      "type": "AnnotationPage",
+      "items": [{
+        "id": "urn:nl-mpi-tools-elan-eaf:3e5d688a-b109-4fb2-ae80-cbcd740561c6#a1",
+        "type": "Annotation",
+        "body": {
+          "format": "text/plain",
+          "type": "TextualBody",
+          "value": "http://data.unil.ch/training/crossings/zhao_cheng"
+        },
+        "@context": "http://www.w3.org/ns/anno.jsonld",
+        "target": {
+          "format": "video/mp4",
+          "id": "file:///Users/adamou/projects/CROSSINGS/data/video/training tools/功法-NDJJD8PBjeI.mp4#t=0.000,10.867",
+          "type": "Video"
+        }
+      }]
+    }
+  }],
+  "type": "Container",
+  "@context": [
+    "http://www.w3.org/ns/anno.jsonld",
+    "http://www.w3.org/ns/ldp.jsonld"
+  ]
+}
