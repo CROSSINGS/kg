@@ -1,0 +1,65 @@
+{
+  "contains": [
+    {
+      "total": 1,
+      "generated": "ELAN Multimedia Annotator 6.2",
+      "id": "urn:nl-mpi-tools-elan-eaf:c1969607-757e-489f-a3b9-df61bc6bc4c0#collection2",
+      "label": ":actor",
+      "type": "AnnotationCollection",
+      "@context": "http://www.w3.org/ns/ldp.jsonld",
+      "first": {
+        "startIndex": "0",
+        "id": "urn:nl-mpi-tools-elan-eaf:c1969607-757e-489f-a3b9-df61bc6bc4c0#collection2-page1",
+        "type": "AnnotationPage",
+        "items": [{
+          "id": "urn:nl-mpi-tools-elan-eaf:c1969607-757e-489f-a3b9-df61bc6bc4c0#a1",
+          "type": "Annotation",
+          "body": {
+            "format": "text/plain",
+            "type": "TextualBody",
+            "value": "http://data.unil.ch/person/crossings/cheung_sheung_hing"
+          },
+          "@context": "http://www.w3.org/ns/anno.jsonld",
+          "target": {
+            "format": "video/mp4",
+            "id": "6fZ4yjZm3h8.mp4#t=0.031,41.773",
+            "type": "Video"
+          }
+        }]
+      }
+    },
+    {
+      "total": 1,
+      "generated": "ELAN Multimedia Annotator 6.2",
+      "id": "urn:nl-mpi-tools-elan-eaf:c1969607-757e-489f-a3b9-df61bc6bc4c0#collection4",
+      "label": ":move",
+      "type": "AnnotationCollection",
+      "@context": "http://www.w3.org/ns/ldp.jsonld",
+      "first": {
+        "startIndex": "0",
+        "id": "urn:nl-mpi-tools-elan-eaf:c1969607-757e-489f-a3b9-df61bc6bc4c0#collection4-page1",
+        "type": "AnnotationPage",
+        "items": [{
+          "id": "urn:nl-mpi-tools-elan-eaf:c1969607-757e-489f-a3b9-df61bc6bc4c0#a2",
+          "type": "Annotation",
+          "body": {
+            "format": "text/plain",
+            "type": "TextualBody",
+            "value": "http://data.unil.ch/tecnhique/crossings/eagle_claw"
+          },
+          "@context": "http://www.w3.org/ns/anno.jsonld",
+          "target": {
+            "format": "video/mp4",
+            "id": "6fZ4yjZm3h8.mp4#t=0.000,41.757",
+            "type": "Video"
+          }
+        }]
+      }
+    }
+  ],
+  "type": "Container",
+  "@context": [
+    "http://www.w3.org/ns/anno.jsonld",
+    "http://www.w3.org/ns/ldp.jsonld"
+  ]
+}

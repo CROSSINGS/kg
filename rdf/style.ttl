@@ -1,0 +1,22 @@
+@prefix crs: <http://crossings.github.io/term/> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+# Instances of stylistic framework
+
+<http://data.unil.ch/style/crossings/lam_gar_gau> a crs:StylingSystem
+	; rdfs:label "Lam Gar Gau"@en , "林家教"@zh
+.
+
+<http://data.unil.ch/tecnhique/crossings/eagle_claw> a crs:Technique
+	; rdfs:label "Eagle Claw"@en
+	; crs:belongsInSystem <http://data.unil.ch/style/crossings/lam_gar_gau>
+.
+
+<http://data.unil.ch/tecnhique/crossings/nian_shou> a crs:Technique
+	; rdfs:label "Sticky Hands"@en , "粘手"@zh , "Nian shou"@zh
+	; crs:hasFlowTransmission <http://data.unil.ch/type/crossings/flowtrans-internal>
+	; crs:contactsThrough <http://data.unil.ch/type/crossings/bodypart-hand>
+.
+

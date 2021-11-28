@@ -3,10 +3,6 @@
 @prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-<http://data.unil.ch/bodypart/crossings/upper_body> a crs:BodyPart
-	; rdfs:label "Upper body"@en
-	; dc:description "Used to identify anything above the waist, and usually below the head, that need not be further specified."@en
-.
 
 <http://data.unil.ch/quality/crossings/grip_firmness> a dul:Quality
 	; rdfs:label "Grip firmness"@en
