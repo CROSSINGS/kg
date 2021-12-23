@@ -21,7 +21,7 @@
 
 <http://data.unil.ch/person/crossings/li_tin_loy/acquisition/shifu> a crs:Acquisition
 	; rdfs:label "Li Tin Toy acquired the status of Sifu"@en
-	; crs:hasStatus <http://data.unil.ch/status/crossings/shifu>
+	; crs:acquisitionHasStatus <http://data.unil.ch/status/crossings/shifu>
 .
 
 <http://data.unil.ch/person/crossings/cheung_sheung_hing> a foaf:Person
@@ -32,6 +32,6 @@
 
 <http://data.unil.ch/person/crossings/cheung_sheung_hing/acquisition/shifu> a crs:Acquisition
 	; rdfs:label "Cheung Sheung Hing acquired the status of Sifu"@en
-	; crs:hasStatus <http://data.unil.ch/status/crossings/shifu>
-	; crs:hasStatusObject <http://data.unil.ch/style/crossings/lam_gar_gau>
+	; crs:acquisitionHasStatus <http://data.unil.ch/status/crossings/shifu>
+	; crs:acquisitionHasObject <http://data.unil.ch/style/crossings/lam_gar_gau>
 .
