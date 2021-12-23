@@ -1,0 +1,36 @@
+{
+  "contains": [{
+    "total": 1,
+    "generated": "ELAN Multimedia Annotator 6.2",
+    "id": "urn:nl-mpi-tools-elan-eaf:8e252c25-bc81-42c1-961d-6a722cf3e896#collection1",
+    "label": ":move",
+    "type": "AnnotationCollection",
+    "@context": "http://www.w3.org/ns/ldp.jsonld",
+    "first": {
+      "startIndex": "0",
+      "id": "urn:nl-mpi-tools-elan-eaf:8e252c25-bc81-42c1-961d-6a722cf3e896#collection1-page1",
+      "type": "AnnotationPage",
+      "items": [{
+        "id": "urn:nl-mpi-tools-elan-eaf:8e252c25-bc81-42c1-961d-6a722cf3e896#a1",
+        "type": "Annotation",
+        "body": {
+          "purpose": "transcribing",
+          "format": "text/plain",
+          "type": "TextualBody",
+          "value": "ttp://data.unil.ch/tecnhique/crossings/chasing_the_wind_sword"
+        },
+        "@context": "http://www.w3.org/ns/anno.jsonld",
+        "target": {
+          "format": "video/mp4",
+          "id": "追風劍-GL_HIfd3Gnw.mkv#t=0.000,38.532",
+          "type": "Video"
+        }
+      }]
+    }
+  }],
+  "type": "Container",
+  "@context": [
+    "http://www.w3.org/ns/anno.jsonld",
+    "http://www.w3.org/ns/ldp.jsonld"
+  ]
+}
