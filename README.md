@@ -2,6 +2,8 @@
 
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC_BY--NC--SA_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
+__Update: The DOI of the archived data has change: please use [10.5281/zenodo.5886867](http://doi.org/10.5281/zenodo.5886867) when citing this work and disregard the old one. Thank you__
+
 This is the development repository of the RDF and JSON-LD datasets describing the published media files of the [Hong Kong Martial Arts Living Archive](http://www.hakkakungfu.com/) (HKMALA).
 
 This effort is supported by CROSSINGS (Computational Interoperability For Intangible and Tangible Cultural Heritage). For more information visit [CROSSINGS@EM+](https://www.epfl.ch/labs/emplus/projects/crossings/).
@@ -13,7 +15,7 @@ This effort is supported by CROSSINGS (Computational Interoperability For Intang
 
 ## How to cite
 
-The latest version of the dataset distribution can be found at https://doi.org/10.5072/zenodo.970553 - please use this DOI when citing the dataset.
+The latest version of the dataset distribution can be found at ~~https://doi.org/10.5072/zenodo.970553~~ https://doi.org/10.5281/zenodo.5886867 - please use the new DOI when citing the dataset.
 
 ## Rights
 
