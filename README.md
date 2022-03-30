@@ -19,7 +19,7 @@ The latest version of the dataset distribution can be found at ~~https://doi.org
 
 ## Rights
 
-This dataset by [International Guoushu Association](http://kungfufestival.com/) is licensed under CC BY-NC-SA 4.0. For any non-commercial use, you must retain the attribution to the International Guoushu Association. For more information, see the [LICENSE](LICENSE) file.
+This dataset, built upon referring to the HKMALA data produced by [International Guoushu Association](http://kungfufestival.com/), is licensed under CC BY-NC-SA 4.0. For any non-commercial use, you must retain the attribution to the International Guoushu Association. For more information, see the [LICENSE](LICENSE) file.
 
 International Guoshu Association (IGA) is a non-profit organization dedicated to safeguarding the heritage of Chinese martial arts.
 
