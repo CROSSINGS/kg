@@ -1,0 +1,23 @@
+@prefix ma: <http://crossings.github.io/term/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<http://data.unil.ch/martialart/crossings/minnan_martial_arts> a ma:StylingSystem 
+	; rdfs:comment "Generic term for Minnan martial arts. TODO move statements down if possible"@en
+	; ma:employsArmament <http://data.unil.ch/weapon/crossings/shuangshoudao>
+.
+
+<http://data.unil.ch/weapon/crossings/shuangshoudao/handling> a ma:Handling
+	; rdfs:label "handling of the two-handed saber"@en
+	; ma:handles <http://data.unil.ch/weapon/crossings/shuangshoudao>
+	; ma:withGrip ma:TwoHandedGrip
+.
+
+<http://data.unil.ch/weapon/crossings/shuangshoudao> a ma:WeaponType
+	; rdfs:label "two-handed saber"@en , "双手刀"@zh , "Shuang Shou Dao"@pny
+	; skos:broader <http://data.unil.ch/weapon/crossings/singleedgedsword>
+.
+
+<http://data.unil.ch/weapon/crossings/singleedgedsword> a ma:WeaponType
+	; rdfs:label "single-edged sword"@en
+.

@@ -17,7 +17,7 @@
 
 
 <http://data.unil.ch/weapon/crossings/gim> a crs:WeaponType
-	; rdfs:label "劍"@zh , "Jian"@en , "Gim"@en
+	; rdfs:label "劍"@zh , "Jian"@pny , "Gim"@en
 	; dc:description "A double-edged straight sword used during the last 2,500 years in China."@en
 	; skos:closeMatch <http://www.wikidata.org/entity/Q1284919>
 .

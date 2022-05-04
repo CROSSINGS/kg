@@ -7,7 +7,7 @@
 # Instances of stylistic framework
 
 <http://data.unil.ch/style/crossings/lam_gar_gau> a crs:StylingSystem
-	; rdfs:label "Lam Gar Gau"@en , "林家教"@zh
+	; rdfs:label "Lam Gar Gau"@pny , "林家教"@zh
 .
 
 <http://data.unil.ch/tecnhique/crossings/eagle_claw> a crs:Technique
@@ -16,7 +16,7 @@
 .
 
 <http://data.unil.ch/tecnhique/crossings/nian_shou> a crs:Technique
-	; rdfs:label "Sticky Hands"@en , "粘手"@zh , "Nian shou"@zh
+	; rdfs:label "Sticky Hands"@en , "粘手"@zh , "Nian shou"@pny
 	; crs:hasFlowTransmission <http://data.unil.ch/type/crossings/flowtrans-internal>
 	; crs:contactsThrough <http://data.unil.ch/type/crossings/bodypart-hand>
 .

@@ -8,7 +8,7 @@
 # Instances of social framework
 
 <http://data.unil.ch/status/crossings/shifu> a crs:Status
-	; rdfs:label "Master"@en , "Sifu"@en , "Shīfù"@zh , "師傅"@zh , "師父"@zh
+	; rdfs:label "Master"@en , "Sifu"@pny , "Shīfù"@pny , "師傅"@zh , "師父"@zh
 	; dc:description "Denotes, almost interchangeably, a skillful person or a master. Largely familial term as the corresponding status is established through the relationship with students, rather than awarded."@en
 .
 
@@ -25,7 +25,7 @@
 .
 
 <http://data.unil.ch/person/crossings/cheung_sheung_hing> a foaf:Person
-	; rdfs:label "Cheung Sheung Hing"@en , "張常興"@zh
+	; rdfs:label "Cheung Sheung Hing"@pny , "張常興"@zh
 	; foaf:name "張常興"
 	; crs:acquiredStatus <http://data.unil.ch/person/crossings/cheung_sheung_hing/acquisition/shifu>
 .
