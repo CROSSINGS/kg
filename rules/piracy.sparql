@@ -1,0 +1,56 @@
+# Employment of Katana and usage of shuangshoudao in Minnan martial arts
+# during Ming dynasty / Sengoku period 
+# Was a consequence of Japanese influence consequent to Wokou incursions (piracy)
+
+
+# definition of prefixes
+PREFIX cucoo: <http://www.semanticweb.org/paulagranadosgarcia/CuCoO/>
+PREFIX data: <http://data.unil.ch/crossings/>
+PREFIX ma: <http://crossings.github.io/term/>
+
+# construct clause with the triples to generate
+CONSTRUCT {
+?x cucoo:hasCulturalAssociation ?assoc1 , ?assoc2 .
+?assoc1 a cucoo:CulturalAssociation
+  ; cucoo:isAssociatedWith ?uident
+  ; cucoo:hasCulturalContactTrait ?featureType
+  ; cucoo:value ?feature
+}
+?assoc2 a cucoo:CulturalAssociation
+  ; cucoo:isAssociatedWith ?uident
+  ; cucoo:hasCulturalContactTrait ma:WeaponType
+  ; cucoo:value <weaponType>
+}
+WHERE {
+
+?style a ma:StylingSystem
+  ; ma:employsArmament ?weapon # directly or through a technique
+.
+?weapon a ?weaponType
+  ; ^ma:handles [ :hasFeature ?feature ]
+
+VALUES (?weaponType ?feature ?featureType ?ident) {
+	( data:SingleEdgedSword :TwoHandedGrip ma:Handling "Japanese")
+}
+
+# Functions
+BIND (URI(CONCAT(STR(?x),"/assoc/", LCASE(?ident) ,"/", LCASE(?featureType)))
+AS ?assoc1)
+BIND (URI(CONCAT(STR(?x),"/assoc/", LCASE(?ident) ,"/weapon"))
+AS ?assoc2)
+BIND (URI(CONCAT("http://data.unil.ch/cultural_identity/crossings/",
+LCASE(?ident) )) AS ?uident)
+}
+
+# Two-handed sword handling is Japanese
+
+<http://data.unil.ch/martialart/crossings/minnan_martial_arts> a ma:StylingSystem 
+	; ma:employsArmament  <http://data.unil.ch/weapon/crossings/shuangshoudao>
+	; ma:handles <http://data.unil.ch/weapon/crossings/shuangshoudao/handling>
+.
+
+<http://data.unil.ch/weapon/crossings/shuangshoudao/handling> a ma:Handling
+	; ma:withGrip :TwoHandedGrip
+
+<http://data.unil.ch/weapon/crossings/shuangshoudao> a data:SingleEdgedSword
+.

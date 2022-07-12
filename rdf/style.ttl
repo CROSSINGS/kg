@@ -10,6 +10,10 @@
 	; rdfs:label "Lam Gar Gau"@pny , "林家教"@zh
 .
 
+<http://data.unil.ch/style/crossings/iron_ox_praying_mantis> a crs:StylingSystem
+	; rdfs:label "Iron Ox Praying Mantis"@en
+.
+
 <http://data.unil.ch/tecnhique/crossings/eagle_claw> a crs:Technique
 	; rdfs:label "Eagle Claw"@en
 	; crs:belongsInSystem <http://data.unil.ch/style/crossings/lam_gar_gau>

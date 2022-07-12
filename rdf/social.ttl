@@ -3,6 +3,7 @@
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 
 # Instances of social framework
@@ -15,6 +16,7 @@
 <http://data.unil.ch/person/crossings/li_tin_loy> a foaf:Person
 	; rdfs:label "Li Tin Toy"@en , "李天來"@zh
 	; foaf:name "李天來"
+	; foaf:depiction <http://www.hakkakungfu.com/exhibits/masters_archive/img/?hash=66a6b9ef2032371ed9ac2cf7ac192be9.jpg>
 	; bio:biography "Master Li Tin Loi was born in Hong Kong in 1954, Hakka family originally from Wuhua. He shows a strong interest in martial arts since he was a child and started practicing kung fu like Chow lee fut and Chu Gar praying mantis for a very short time. He chose police officer for his profession and served as a marine police officer till retirement. Meanwhile, he also started practicing Tung Kong Chow Ka-Preying Mantis under Grand Mster Yip Siu since 1979. For these years master Li had put all his effort and time on his kung fu practice. Finally, grand master Yip was so moved by his sincerity, loyalty and hard working that he admitted Master Li as an in-house disciple and passed all his knowledge onto Master Li."@en
 	; crs:acquiredStatus <http://data.unil.ch/person/crossings/li_tin_loy/acquisition/shifu>
 .
@@ -24,6 +26,31 @@
 	; crs:acquisitionHasStatus <http://data.unil.ch/status/crossings/shifu>
 .
 
+<http://data.unil.ch/person/crossings/yau_wun_wah> a foaf:Person
+	; rdfs:label "Yau Wun Wah"@en , "丘運華"@zh
+	; foaf:name "丘運華"
+	; foaf:depiction <http://www.hakkakungfu.com/exhibits/masters_archive/img/?hash=c74442c6801bc370e1e47f0ffada5a3c.jpg>
+	; bio:biography "Yau Wan Wah, Hakka, was born in Hong Kong in 1954 and is a native of Baitang village in Boluo county, Guangdong province. He is the eldest in his family and worked at the Agriculture, Fisheries and Conservation Department before retirement. He grew up in Tong Hang village in Fanling, and developed a strong interest in the martial arts through watching kung fu films and because his natural love for physical exercise. From 1967 to 1969 Chan Kam sifu, a master of Chu Gar Praying Mantis, ran a school in his village. Yau Wan Wah studied there for several months in 1969, but Chen sifu soon left Tong Hang village so he only had time to learn some basic stances. In 1972 he went to study Pak Mei at Chan Kwok Wah’s school at Fanling No. One Bridge, which lasted a year."@en
+	; crs:acquiredStatus <http://data.unil.ch/person/crossings/yau_wun_wah/acquisition/shifu>
+.
+
+<http://data.unil.ch/person/crossings/yau_wun_wah/acquisition/shifu> a crs:Acquisition
+	; rdfs:label "Yau Wun Wah acquired the status of Sifu of Iron Ox Praying Mantis"@en
+	; crs:acquisitionHasStatus <http://data.unil.ch/status/crossings/shifu>
+	; crs:acquisitionHasObject <http://data.unil.ch/style/crossings/iron_ox_praying_mantis>
+.
+
+<http://data.unil.ch/person/crossings/yau_wun_wah/attendance/tai_po_wah_chau_calisthenics_school/1> a crs:Attendance
+	; rdfs:label "Yau Wun Wah attended Tai Po Wah Chau Calisthenics School from 1973"@en
+	; crs:school <http://data.unil.ch/community/crossings/tai_po_wah_chau_calisthenics_school>
+	; crs:from "1973"^^xsd:gYear
+	; crs:attendant <http://data.unil.ch/person/crossings/yau_wun_wah>
+.
+
+<http://data.unil.ch/community/crossings/tai_po_wah_chau_calisthenics_school> a crs:MartialArtsCommunity , crs:SchoolOfMartialArts
+	; rdfs:label "Tai Po Wah Chau Calisthenics School"@en
+.
+
 <http://data.unil.ch/person/crossings/cheung_sheung_hing> a foaf:Person
 	; rdfs:label "Cheung Sheung Hing"@pny , "張常興"@zh
 	; foaf:name "張常興"
@@ -31,7 +58,8 @@
 .
 
 <http://data.unil.ch/person/crossings/cheung_sheung_hing/acquisition/shifu> a crs:Acquisition
-	; rdfs:label "Cheung Sheung Hing acquired the status of Sifu"@en
+	; rdfs:label "Cheung Sheung Hing acquired the status of Sifu of Lam Gar Gau"@en
 	; crs:acquisitionHasStatus <http://data.unil.ch/status/crossings/shifu>
 	; crs:acquisitionHasObject <http://data.unil.ch/style/crossings/lam_gar_gau>
 .
+

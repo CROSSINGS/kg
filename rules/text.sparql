@@ -1,0 +1,32 @@
+# definition of prefixes
+PREFIX bmlang:
+<http://collection.britishmuseum.org/id/thesauri/language/>
+PREFIX crm: <http://erlangen-crm.org/current/>
+PREFIX cucoo:
+<http://www.semanticweb.org/paulagranadosgarcia/CuCoO/>
+PREFIX epi: <http://edh-www.adw.uni-heidelberg.de/edh/ontology#>
+# construct clause with the triples to generate
+CONSTRUCT {
+?x cucoo:hasCulturalAssociation ?assoc .
+?assoc a cucoo:CulturalAssociation
+; cucoo:isAssociatedWith ?uident
+; cucoo:hasCulturalContactTrait
+<http://data.open.ac.uk/erub/culturalTrait/inscription>
+; cucoo:value ?language
+}
+WHERE {
+?x epi:hasInscription ?inscription .
+?inscription crm:P72_has_language ?language .
+# A table that associates cultural identity labels to language
+VALUES (?language ?ident) {
+(bmlang:Latin "Roman" )
+(bmlang:Latin? "Roman" )
+(bmlang:hieroglyphic "Egyptian" )
+(bmlang:indigenous "indigenous" )
+}
+# functions to automatically construct a new URI for the
+# association based on the URI of the object
+BIND (URI(CONCAT(STR(?x),"/assoc/", LCASE(?ident) ,"/language"))
+AS ?assoc)
+BIND (URI(CONCAT("http://data.open.ac.uk/erub/cultural_identity/",
+LCASE(?ident) )) AS ?uident)
