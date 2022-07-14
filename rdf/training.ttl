@@ -1,4 +1,4 @@
-@prefix crs: <http://crossings.github.io/term/> .
+@prefix ma: <http://crossings.github.io/term/> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -12,20 +12,20 @@
 	; rdfs:label "Lifting strength"@en
 .
 
-<http://data.unil.ch/training/crossings/zhao_cheng> a crs:TrainingExercise
+<http://data.unil.ch/training/crossings/zhao_cheng> a ma:TrainingExercise
 	; rdfs:label "找埕"@zh , "Zhao Cheng"@en
 	; dc:description "A single-handed weight lifting exercise from a combat stance and with grip using upper phalanges only"@en
-	; crs:develops <http://data.unil.ch/development/crossings/upper_body/strength> , <http://data.unil.ch/development/crossings/hand/grip_firmness>
+	; ma:develops <http://data.unil.ch/development/crossings/upper_body/strength> , <http://data.unil.ch/development/crossings/hand/grip_firmness>
 .
 
-<http://data.unil.ch/development/crossings/upper_body/strength> a crs:Development
+<http://data.unil.ch/development/crossings/upper_body/strength> a ma:Development
 	; rdfs:label "Upper body strength"@en
-	; crs:affectsBodyPart <http://data.unil.ch/bodypart/crossings/upper_body>
-	; crs:improves <http://data.unil.ch/quality/crossings/lifting_strength>
+	; ma:affectsBodyPart <http://data.unil.ch/bodypart/crossings/upper_body>
+	; ma:improves <http://data.unil.ch/quality/crossings/lifting_strength>
 .
 
-<http://data.unil.ch/development/crossings/hand/grip_firmness> a crs:Development
+<http://data.unil.ch/development/crossings/hand/grip_firmness> a ma:Development
 	; rdfs:label "Hand grip firmness"@en
-	; crs:affectsBodyPart <http://data.unil.ch/bodypart/crossings/hand>
-	; crs:improves <http://data.unil.ch/quality/crossings/grip_firmness>
+	; ma:affectsBodyPart <http://data.unil.ch/bodypart/crossings/hand>
+	; ma:improves <http://data.unil.ch/quality/crossings/grip_firmness>
 .

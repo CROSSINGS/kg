@@ -1,22 +1,22 @@
-@prefix crs: <http://crossings.github.io/term/> .
+@prefix ma: <http://crossings.github.io/term/> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
 # Instances of anatomic views of Hakka styles
 
-<http://data.unil.ch/type/crossings/bodypart-hand> a crs:BodyPartType
+<http://data.unil.ch/type/crossings/bodypart-hand> a ma:BodyPartType
 	; rdfs:label "Hand"@en
 	; dc:description "Any one hand: can be used when the technique applies to left or right indistinctly."@en
 .
 
-<http://data.unil.ch/bodypart/crossings/upper_body> a crs:BodyPartType
+<http://data.unil.ch/bodypart/crossings/upper_body> a ma:BodyPartType
 	; rdfs:label "Upper body"@en
 	; dc:description "Used to identify anything above the waist, and usually below the head, that need not be further specified."@en
 .
 
 
-<http://data.unil.ch/weapon/crossings/gim> a crs:WeaponType
+<http://data.unil.ch/weapon/crossings/gim> a ma:WeaponType
 	; rdfs:label "劍"@zh , "Jian"@pny , "Gim"@en
 	; dc:description "A double-edged straight sword used during the last 2,500 years in China."@en
 	; skos:closeMatch <http://www.wikidata.org/entity/Q1284919>
@@ -25,12 +25,12 @@
 
 # Instances of kinaesthetic framework
 
-<http://data.unil.ch/type/crossings/flowtrans-external> a crs:FlowTransmissionType
+<http://data.unil.ch/type/crossings/flowtrans-external> a ma:FlowTransmissionType
 	; rdfs:label "External flow transmission"@en
 	; dc:description "The power of a blow comes from a part of the body connects at the point of impact."@en
 .
 
-<http://data.unil.ch/type/crossings/flowtrans-internal> a crs:FlowTransmissionType
+<http://data.unil.ch/type/crossings/flowtrans-internal> a ma:FlowTransmissionType
 	; rdfs:label "Internal flow transmission"@en
 	; dc:description "The power of a blow comes from a part of the body that does not match the point of impact."@en
 .

@@ -1,0 +1,67 @@
+{
+  "contains": [
+    {
+      "total": 1,
+      "generator": "ELAN Multimedia Annotator 6.3",
+      "id": "urn:nl-mpi-tools-elan-eaf:985600a7-86c2-4102-b4bb-e1dc885f5eb6#collection1",
+      "label": "style",
+      "type": "AnnotationCollection",
+      "@context": "http://www.w3.org/ns/ldp.jsonld",
+      "first": {
+        "startIndex": "0",
+        "id": "urn:nl-mpi-tools-elan-eaf:985600a7-86c2-4102-b4bb-e1dc885f5eb6#collection1-page1",
+        "type": "AnnotationPage",
+        "items": [{
+          "id": "urn:nl-mpi-tools-elan-eaf:985600a7-86c2-4102-b4bb-e1dc885f5eb6#a1",
+          "type": "Annotation",
+          "body": {
+            "format": "text/plain",
+            "language": "",
+            "type": "TextualBody",
+            "value": "http://data.unil.ch/style/crossings/iron_ox_praying_mantis"
+          },
+          "@context": "http://www.w3.org/ns/anno.jsonld",
+          "target": {
+            "format": "video/mp4",
+            "id": "aGfwOChj0ss.mp4#t=0.000,29.374",
+            "type": "Video"
+          }
+        }]
+      }
+    },
+    {
+      "total": 1,
+      "generator": "ELAN Multimedia Annotator 6.3",
+      "id": "urn:nl-mpi-tools-elan-eaf:985600a7-86c2-4102-b4bb-e1dc885f5eb6#collection2",
+      "label": "social",
+      "type": "AnnotationCollection",
+      "@context": "http://www.w3.org/ns/ldp.jsonld",
+      "first": {
+        "startIndex": "0",
+        "id": "urn:nl-mpi-tools-elan-eaf:985600a7-86c2-4102-b4bb-e1dc885f5eb6#collection2-page1",
+        "type": "AnnotationPage",
+        "items": [{
+          "id": "urn:nl-mpi-tools-elan-eaf:985600a7-86c2-4102-b4bb-e1dc885f5eb6#a2",
+          "type": "Annotation",
+          "body": {
+            "format": "text/plain",
+            "language": "",
+            "type": "TextualBody",
+            "value": "http://data.unil.ch/person/crossings/yau_wun_wah"
+          },
+          "@context": "http://www.w3.org/ns/anno.jsonld",
+          "target": {
+            "format": "video/mp4",
+            "id": "aGfwOChj0ss.mp4#t=0.000,29.374",
+            "type": "Video"
+          }
+        }]
+      }
+    }
+  ],
+  "type": "Container",
+  "@context": [
+    "http://www.w3.org/ns/anno.jsonld",
+    "http://www.w3.org/ns/ldp.jsonld"
+  ]
+}

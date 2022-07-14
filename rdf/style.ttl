@@ -1,34 +1,50 @@
-@prefix crs: <http://crossings.github.io/term/> .
+@prefix ma: <http://crossings.github.io/term/> .
 @prefix dc: <http://purl.org/dc/terms/> .
+@prefix dul: <http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix wd: <http://www.wikidata.org/entity/> .
 
 
 # Instances of stylistic framework
 
-<http://data.unil.ch/style/crossings/lam_gar_gau> a crs:StylingSystem
+<http://data.unil.ch/style/crossings/lam_gar_gau> a ma:StylingSystem
 	; rdfs:label "Lam Gar Gau"@pny , "林家教"@zh
 .
 
-<http://data.unil.ch/style/crossings/iron_ox_praying_mantis> a crs:StylingSystem
-	; rdfs:label "Iron Ox Praying Mantis"@en
+<http://data.unil.ch/style/crossings/southern_praying_mantis> a ma:StylingSystem
+	; rdfs:label "Southern Praying Mantis"@en , "南派螳螂"@zh
+	; owl:sameAs wd:Q1152016
 .
 
-<http://data.unil.ch/tecnhique/crossings/eagle_claw> a crs:Technique
+<http://data.unil.ch/style/crossings/northern_praying_mantis> a ma:StylingSystem
+	; rdfs:label "Northern Praying Mantis"@en , "螳螂拳"@zh , "tánglángquán"@pny
+	; owl:sameAs wd:Q4451256
+.
+
+<http://data.unil.ch/style/crossings/iron_ox_praying_mantis> a ma:StylingSystem
+	; rdfs:label "Iron Ox Praying Mantis"@en , "Iron Ox"@en , "鐵牛"@zh
+	; skos:prefLabel "Iron Ox Praying Mantis"@en
+	; ma:derivedFrom <http://data.unil.ch/style/crossings/southern_praying_mantis>
+.
+
+<http://data.unil.ch/tecnhique/crossings/eagle_claw> a ma:Technique
 	; rdfs:label "Eagle Claw"@en
-	; crs:belongsInSystem <http://data.unil.ch/style/crossings/lam_gar_gau>
+	; ma:belongsInSystem <http://data.unil.ch/style/crossings/lam_gar_gau>
+	; ma:mimics wd:Q2092297 , wd:Q217605
 .
 
-<http://data.unil.ch/tecnhique/crossings/nian_shou> a crs:Technique
+<http://data.unil.ch/tecnhique/crossings/nian_shou> a ma:Technique
 	; rdfs:label "Sticky Hands"@en , "粘手"@zh , "Nian shou"@pny
-	; crs:hasFlowTransmission <http://data.unil.ch/type/crossings/flowtrans-internal>
-	; crs:contactsThrough <http://data.unil.ch/type/crossings/bodypart-hand>
+	; ma:hasFlowTransmission <http://data.unil.ch/type/crossings/flowtrans-internal>
+	; ma:contactsThrough <http://data.unil.ch/type/crossings/bodypart-hand>
 .
 
-<http://data.unil.ch/tecnhique/crossings/chasing_the_wind_sword> a crs:FrontalTechnique
+<http://data.unil.ch/tecnhique/crossings/chasing_the_wind_sword> a ma:FrontalTechnique
 	; rdfs:label "Chasing the Wind Sword"@en , "追風劍"@zh
-	; crs:employsArmament <http://data.unil.ch/weapon/crossings/gim>
-	; crs:symbolicallyRepresents <http://data.unil.ch/concept/crossings/pursuit> , <http://data.unil.ch/concept/crossings/unreachability> , <http://www.wikidata.org/entity/Q8094>
+	; ma:employsArmament <http://data.unil.ch/weapon/crossings/gim>
+	; ma:symbolicallyRepresents <http://data.unil.ch/concept/crossings/pursuit> , <http://data.unil.ch/concept/crossings/unreachability> , wd:Q8094
 .
 
 # Symbolic references
