@@ -22,6 +22,12 @@
 	; rdfs:label "Tai Po Wah Chau Calisthenics School"@en
 .
 
+<http://data.unil.ch/community/crossings/jieyuantang> a ma:MartialArtsCommunity , ma:SchoolOfMartialArts
+	; rdfs:label "Jieyuantang"@en
+	; dc:description "One of the leading martial art schools in Fujian during the Republic of China, and played an instrumental role in internationalizing traditional Minnan martial arts, particularly the Crane Methods."
+	; ma:teaches <http://data.unil.ch/style/crossings/fujian_white_crane>
+.
+
 
 # Practitioners
 

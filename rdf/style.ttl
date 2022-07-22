@@ -23,6 +23,13 @@
 	; owl:sameAs wd:Q4451256
 .
 
+<http://data.unil.ch/style/crossings/fujian_white_crane> a ma:StylingSystem
+	; rdfs:label "White Crane Style"@en , "白鶴拳"@zh
+	; rdfs:comment "More properly a family of styles: the Sleeping, Crying, Eating, Flying and Shaking Crane styles, all based on imitative characteristics of their techniques."@en
+    ; owl:sameAs wd:Q803758
+	; ma:mimics wd:Q25365
+.
+
 <http://data.unil.ch/style/crossings/iron_ox_praying_mantis> a ma:StylingSystem
 	; rdfs:label "Iron Ox Praying Mantis"@en , "Iron Ox"@en , "鐵牛"@zh
 	; skos:prefLabel "Iron Ox Praying Mantis"@en
@@ -37,7 +44,7 @@
 
 <http://data.unil.ch/tecnhique/crossings/southern_praying_mantis_saw_sau> a ma:Technique , ma:BasicMove
 	; rdfs:label "Lock Hand"@en , "鎖手"@zh , "Saw Sau"@pny
-	; dc:description "Saw Sau (鎖手) is used to attack, divert and parry a strike away to the side. The translation "lock hand" is due to the hand and forearm positions resembling the shape of a key, rather than being a type of joint lock/submission technique"@en
+	; dc:description "Saw Sau (鎖手) is used to attack, divert and parry a strike away to the side. The translation \"lock hand\" is due to the hand and forearm positions resembling the shape of a key, rather than being a type of joint lock/submission technique"@en
 	; ma:belongsInSystem <http://data.unil.ch/style/crossings/tung_kong_chow_gar_tong_long>
 	; ma:mimics wd:Q132041
 	; ma:contactsThrough <http://data.unil.ch/type/crossings/bodypart-hand> , <http://data.unil.ch/type/crossings/bodypart-forearm>
