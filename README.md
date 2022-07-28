@@ -35,17 +35,3 @@ This dataset by [International Guoshu Association](http://kungfufestival.com/) i
 International Guoshu Association (IGA) is a non-profit organization dedicated to safeguarding the heritage of Chinese martial arts.
 
 [![License: CC BY-NC-SA 4.0](https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
-
-### How to cite our work
-
-
-Please use the following reference when citing this work
-```
-@inproceedings{dh2022:196,
-          author = {Davide Picca and Alessandro Adamou and Yumeng Hou and Mattia Egloff and Sahar Kenderdine},
-       booktitle = {Digital Humanities 2022 - Responding to Asian Diversity, Tokyo, Japan, 25-29 July 2022},
-           title = {Knowledge organization of the Hong Kong Martial Arts Living Archive to capture and preserve intangible cultural heritage},
-            year = {2022},
-             url = {https://dh2022.dhii.asia/abstracts/196}
-}
-```
