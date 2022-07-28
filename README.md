@@ -17,6 +17,17 @@ This effort is supported by CROSSINGS (Computational Interoperability For Intang
 
 The latest version of the dataset distribution can be found at ~~https://doi.org/10.5072/zenodo.970553~~ https://doi.org/10.5281/zenodo.5886867 - please use the new DOI when citing the dataset.
 
+When citing this work in scholarly papers, please use the following BibTeX reference:
+```
+@inproceedings{dh2022:196,
+          author = {Davide Picca and Alessandro Adamou and Yumeng Hou and Mattia Egloff and Sarah Kenderdine},
+       booktitle = {Digital Humanities 2022 - Responding to Asian Diversity, Tokyo, Japan, 25-29 July 2022},
+           title = {Knowledge organization of the {Hong Kong Martial Arts Living Archive} to capture and preserve intangible cultural heritage},
+            year = {2022},
+             url = {https://dh2022.dhii.asia/abstracts/196}
+}
+```
+
 ## Rights
 
 This dataset by [International Guoshu Association](http://kungfufestival.com/) is licensed under CC BY-NC-SA 4.0. For any non-commercial use, you must retain this attribution to the International Guoshu Association. For more information, see the [LICENSE](LICENSE) file.
@@ -24,3 +35,17 @@ This dataset by [International Guoshu Association](http://kungfufestival.com/) i
 International Guoshu Association (IGA) is a non-profit organization dedicated to safeguarding the heritage of Chinese martial arts.
 
 [![License: CC BY-NC-SA 4.0](https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
+### How to cite our work
+
+
+Please use the following reference when citing this work
+```
+@inproceedings{dh2022:196,
+          author = {Davide Picca and Alessandro Adamou and Yumeng Hou and Mattia Egloff and Sahar Kenderdine},
+       booktitle = {Digital Humanities 2022 - Responding to Asian Diversity, Tokyo, Japan, 25-29 July 2022},
+           title = {Knowledge organization of the Hong Kong Martial Arts Living Archive to capture and preserve intangible cultural heritage},
+            year = {2022},
+             url = {https://dh2022.dhii.asia/abstracts/196}
+}
+```
