@@ -1,0 +1,39 @@
+# The usage of symbolism in styles indicates a cultural influence
+
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX cucoo: <http://www.semanticweb.org/paulagranadosgarcia/CuCoO/>
+PREFIX ma: <http://crossings.github.io/term/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+prefix wd: <http://www.wikidata.org/entity/>
+
+CONSTRUCT {
+  ?subject cucoo:hasCulturalAssociation ?assoc .
+  ?assoc a cucoo:CulturalAssociation
+    ; cucoo:isAssociatedWith ?identity
+    ; cucoo:hasCulturalContactTrait ?p
+    ; cucoo:value ?symbol
+  .
+}
+WHERE {
+  VALUES (?symbol ?identity) {
+	( wd:Q25365 <http://data.unil.ch/identity/crossings/zhangzhou/qing> )
+  }
+  VALUES (?p) {
+    (ma:representedBy)
+    (ma:symbolicallyRepresents)
+    (ma:mimics)
+  }
+  
+  { ?subject a ma:StylingSystem
+  } UNION {
+    ?subject a ma:Technique 
+  } .
+  ?subject ?p ?symbol
+
+  # Functions to build new entities
+  BIND (URI(CONCAT( STR(?style),"/assoc/", MD5(STR(?identity)) ,"/", MD5(STR(?symbol)) )) AS ?assoc)
+  BIND (URI(CONCAT( "http://data.unil.ch/cultural_identity/crossings/", LCASE(?ident) )) AS ?uident)
+
+}

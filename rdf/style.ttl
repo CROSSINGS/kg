@@ -23,6 +23,13 @@
 	; owl:sameAs wd:Q4451256
 .
 
+<http://data.unil.ch/style/crossings/fujian_white_crane> a ma:StylingSystem
+	; rdfs:label "White Crane Style"@en , "白鶴拳"@zh
+	; rdfs:comment "More properly a family of styles: the Sleeping, Crying, Eating, Flying and Shaking Crane styles, all based on imitative characteristics of their techniques."@en
+    ; owl:sameAs wd:Q803758
+	; ma:mimics wd:Q25365
+.
+
 <http://data.unil.ch/style/crossings/iron_ox_praying_mantis> a ma:StylingSystem
 	; rdfs:label "Iron Ox Praying Mantis"@en , "Iron Ox"@en , "鐵牛"@zh
 	; skos:prefLabel "Iron Ox Praying Mantis"@en
