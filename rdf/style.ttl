@@ -37,7 +37,7 @@
 
 <http://data.unil.ch/tecnhique/crossings/southern_praying_mantis_saw_sau> a ma:Technique , ma:BasicMove
 	; rdfs:label "Lock Hand"@en , "鎖手"@zh , "Saw Sau"@pny
-	; dc:description "Saw Sau (鎖手) is used to attack, divert and parry a strike away to the side. The translation "lock hand" is due to the hand and forearm positions resembling the shape of a key, rather than being a type of joint lock/submission technique"@en
+	; dc:description "Saw Sau (鎖手) is used to attack, divert and parry a strike away to the side. The translation \"lock hand\" is due to the hand and forearm positions resembling the shape of a key, rather than being a type of joint lock/submission technique"@en
 	; ma:belongsInSystem <http://data.unil.ch/style/crossings/tung_kong_chow_gar_tong_long>
 	; ma:mimics wd:Q132041
 	; ma:contactsThrough <http://data.unil.ch/type/crossings/bodypart-hand> , <http://data.unil.ch/type/crossings/bodypart-forearm>
