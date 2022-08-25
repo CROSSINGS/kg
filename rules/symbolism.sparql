@@ -33,7 +33,7 @@ WHERE {
   ?subject ?p ?symbol
 
   # Functions to build new entities
-  BIND (URI(CONCAT( STR(?style),"/assoc/", MD5(STR(?identity)) ,"/", MD5(STR(?symbol)) )) AS ?assoc)
+  BIND (URI(CONCAT( STR(?subject),"/assoc/", MD5(STR(?identity)) ,"/", MD5(STR(?symbol)) )) AS ?assoc)
   BIND (URI(CONCAT( "http://data.unil.ch/cultural_identity/crossings/", LCASE(?ident) )) AS ?uident)
 
 }
