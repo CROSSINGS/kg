@@ -9,6 +9,13 @@
 
 # Instances of stylistic framework
 
+<http://data.unil.ch/form/crossings/sarm_bo_jin> a ma:Form
+   ; rdfs:label "Three Steps Arrow"@en , "三步箭"@zh , "sān bù jiàn"@pny
+   ; ma:belongsInSystem 
+     <http://data.unil.ch/style/crossings/iron_ox_praying_mantis> ,
+     <http://data.unil.ch/style/crossings/tung_kong_chow_gar_tong_long>
+.
+
 <http://data.unil.ch/style/crossings/lam_gar_gau> a ma:StylingSystem
 	; rdfs:label "Lam Gar Gau"@pny , "林家教"@zh
 .

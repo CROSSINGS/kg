@@ -1,0 +1,30 @@
+# 
+
+PREFIX crm: <http://www.cidoc-crm.org/cidoc-crm/>
+PREFIX cucoo: <http://www.semanticweb.org/paulagranadosgarcia/CuCoO/>
+PREFIX ma: <http://crossings.github.io/term/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+
+CONSTRUCT {
+  # Feature-based association
+  ?style cucoo:hasCulturalAssociation ?assoc1 .
+  ?assoc1 a cucoo:CulturalAssociation
+    ; cucoo:isAssociatedWith ?uident
+    ; cucoo:hasCulturalContactTrait ma:Form
+    ; cucoo:value ?form
+  .
+}
+WHERE {
+  ?style a ma:StylingSystem
+    ; ^ma:belongsInSystem? ?form .
+  ?form a ma:Form .
+  
+  VALUES (?form ?ident) {
+	( <http://data.unil.ch/form/crossings/sarm_bo_jin> "Hakka people" )
+  }
+  
+  BIND (URI(CONCAT(STR(?style),"/assoc/", LCASE(?ident) ,"/form")) AS ?assoc1)
+  BIND (URI(CONCAT("http://data.unil.ch/cultural_identity/crossings/", LCASE(?ident) )) AS ?uident)  
+}
